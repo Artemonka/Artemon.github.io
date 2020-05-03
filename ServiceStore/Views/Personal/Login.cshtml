@@ -1,0 +1,25 @@
+﻿@model Personal
+
+<div class="container Cont-page">
+     </br></br></br>
+    <div class="form-group">
+        <label style="font-family:Pacifico;"><strong>Логин</strong></label>
+        <div class="col-3" style="margin-left:37%; margin-right:37%;">
+            <input asp-for="Login" class="form-control" />
+            <span asp-validation-for="Login" class="text-danger"></span>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label style="font-family:Pacifico;"><strong>Пароль</strong></label>
+        <div class="col-3" style="margin-left:37%; margin-right:37%;">
+            <input asp-for="Passwrord" class="form-control" />
+            <span asp-validation-for="Passwrord" class="text-danger"></span>
+        </div>
+    </div>
+    </br>
+    <div style="text-align:center;">
+        <input class="btn" href="#" style="border:solid; background-color:#712F26; opacity:0.75; color:black;" type="submit" value="Войти" />
+    </div>
+
+</div>

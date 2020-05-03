@@ -1,0 +1,11 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\ServiceStore",
+    "\\ServiceStore\\ViewModels",
+    "\\ServiceStore\\Views",
+    "\\ServiceStore\\Views\\Store"
+  ],
+  "SelectedNode": "\\ServiceStore\\Views\\Store\\Services.cshtml",
+  "PreviewInSolutionExplorer": false
+}

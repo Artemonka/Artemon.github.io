@@ -1,0 +1,64 @@
+﻿
+
+/* Отступ сверху для содержимого body (высота navbar = 50px)*/
+body {
+    padding-top: 0px;
+}
+/* Заставка */
+.splash {
+    /* Отступ для содержимого, помещенного в splash */
+    padding: 9em 0 2em;
+    /* Картинка, которая используются для splash */
+    background-image: url(../img/Fon.jpg);
+    /* Масштабируем картинку с сохранением пропорций */
+    background-size: auto;
+    /* Запрещаем фоновому изображению прокручиваться, т.е. делаем его неподвижным */
+    background-attachment: scroll;
+    /* Цвет текста */
+    color: #fff;
+    /* Выравниваем текста внутри splash по центру */
+    text-align: center;
+    }
+
+.Fon {background-color: whitesmoke;}
+
+.carousel-inner img {
+    max-height: 850px;
+    background-size: cover;
+    background-attachment: scroll;
+}
+
+.carousel-caption {
+    position:absolute;
+    top:50%;
+    transform: translateY(-100%);
+}
+/*цвет иконок*/
+.fa-facebook {color:#3b5998;}
+.fa-instagram {color: #D32773;}
+.fa-twitter {color:#00aced;}
+.fa-youtube {color:#bb0000;}
+.fa-google-plus-g {color:#dd4b39;}
+
+.Cont-page {
+    padding: 1em 0 2em;
+    min-height:500px;
+    
+    margin-right:2%;
+    /* Картинка, которая используются для splash */
+    background-image: url(../img/Container.jpg);
+    /* Масштабируем картинку с сохранением пропорций */
+    background-size: cover;
+    /* Запрещаем фоновому изображению прокручиваться, т.е. делаем его неподвижным */
+    background-attachment: scroll;
+    /* Цвет текста */
+    color: #fff;
+    /* Выравниваем текста внутри splash по центру */
+    text-align: center;
+    color:#79553D;
+}
+.navbar {
+    background-image: url(../img/Navbar.jpg);
+    background-size: cover;
+    background-attachment: scroll;
+}

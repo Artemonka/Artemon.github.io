@@ -1,0 +1,70 @@
+﻿@model Personal
+@using ServiceStore.Data
+
+
+
+<div class="container Cont-page">
+    <form asp-action="Account" method="post" class="form-horizontal">
+        </br></br>
+        <div class="form-group">
+            <label style="font-family:Pacifico;"><strong>Логин</strong></label>
+            <div class="col-3" style="margin-left:37%; margin-right:37%;">
+                <input asp-for="Login" class="form-control" />
+                <span asp-validation-for="Login" class="text-danger"></span>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label style="font-family:Pacifico;"><strong>Пароль</strong></label>
+            <div class="col-3" style="margin-left:37%; margin-right:37%;">
+                <input asp-for="Passwrord" class="form-control" />
+                <span asp-validation-for="Passwrord" class="text-danger"></span>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label style="font-family:Pacifico;"><strong>Имя</strong></label>
+            <div class="col-3" style="margin-left:37%; margin-right:37%;">
+                <input asp-for="Name" class="form-control" />
+                <span asp-validation-for="Name" class="text-danger"></span>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label style="font-family:Pacifico;"><strong>Фамилия</strong></label>
+            <div class="col-3" style="margin-left:37%; margin-right:37%;">
+                <input asp-for="LastName" class="form-control" />
+                <span asp-validation-for="LastName" class="text-danger"></span>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label style="font-family:Pacifico;"><strong>Отчество</strong></label>
+            <div class="col-3" style="margin-left:37%; margin-right:37%;">
+                <input asp-for="SurName" class="form-control" />
+                <span asp-validation-for="SurName" class="text-danger"></span>
+            </div>
+        </div>
+
+
+        <div class="form-group">
+            <label style="font-family:Pacifico;"><strong>Почтовый ящик</strong></label>
+            <div class="col-3" style="margin-left:37%; margin-right:37%;">
+                <input asp-for="Email" class="form-control" />
+                <span asp-validation-for="Email" class="text-danger"></span>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label style="font-family:Pacifico;"><strong>Номер телефона</strong></label>
+            <div class="col-3" style="margin-left:37%; margin-right:37%;">
+                <input asp-for="Phone" class="form-control" />
+                <span asp-validation-for="Phone" class="text-danger"></span>
+            </div>
+        </div>
+        <div style="text-align:right; padding-right:7%;">
+            <input class="btn" href="#" style="border:solid; background-color:#712F26; opacity:0.75; color:black;" type="submit" value="Создать профиль" />
+        </div>
+    </form>
+</div>  
+ 

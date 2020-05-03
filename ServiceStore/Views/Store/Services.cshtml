@@ -1,0 +1,116 @@
+﻿
+
+
+@{
+    Service[] Slide= new Service[24]; /*массив для хранениz объектов для каждого слайда, в него записываются обекты*/
+    int i = 0;
+    foreach (Service Service in Model.AllService)
+    {
+      
+            Slide[i] = Service;
+            i++;
+    }
+
+}
+
+
+<div class="Fon container" style="padding-left:0; padding-right:0;">
+    <div class="carousel slide" data-ride="carousel" id="slides">
+        <ul class="carousel-indicators">
+            <li data-target="#slides" data-slide-to="0" class="active"></li>
+            <li data-target="#slides" data-slide-to="1"></li>
+            <li data-target="#slides" data-slide-to="2"></li>
+        </ul>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="~/img/Container.jpg"/>
+                <div class="carousel-caption ">
+                    <!------------------Слайд1-------------------------------------->
+                    <div class="row">
+                        @{i = 0;
+                            @foreach (Service Service in Slide)
+                            {
+                                if (i < 8)
+                                {
+                                    @Html.Partial("AllServices", Slide[i])
+                                }
+                                if (i == 8)
+                                {
+                                    break;
+                                }
+                                i++;
+                            }
+                        }
+                    </div>
+                    <!----------------------------------------------------------->
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="~/img/Container.jpg" style="transform:translateX(-7%)"; />
+                <div class="carousel-caption">
+                    <!----------------------Слайд2---------------------------------->
+                    <div class="row">
+                        @{i = 8;
+                            @foreach (Service Service in Slide)
+                            {
+                                if (i > 7 && i < 16)
+                                {
+                                    @Html.Partial("AllServices", Slide[i])
+                                }
+                                if (i == 16)
+                                {
+                                    break;
+                                }
+                                i++;
+                            }
+                        }
+                    </div>
+                    <!----------------------------------------------------------->
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="~/img/Container.jpg" style="transform:translateX(-14%);"/>
+                <div class="carousel-caption">
+                    <!----------------------------Слайд3---------------------------->
+                    <div class="row">
+                        @{i = 16;
+                            @foreach (Service Service in Slide)
+                            {
+                                if (i > 15 && i < 23)
+                                {
+                                    @Html.Partial("AllServices", Slide[i])
+                                }
+                                if (i == 24)
+                                {
+                                    break;
+                                }
+                                i++;
+                            }
+                        }
+                    </div>
+                    <!----------------------------------------------------------->
+                </div>
+            </div>
+        </div>
+
+        <!-- Элементы управления -->
+        <a class="carousel-control-prev" style="top:-30%;" href="#slides" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Предыдущий</span>
+        </a>
+        <a class="carousel-control-next" style="top:-30%;" href="#slides" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Следующий</span>
+        </a>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
